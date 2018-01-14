@@ -19,6 +19,6 @@ function callForNote(note, callback) {
 	// console.log(note) //arg j pathako cha tei aaucha
 	// console.log(callback) //arg j pathako tei aauch
 	setTimeout(function() {
-		callback('note found and note is ' + note);
+		callback('note found ' + note);
 	}, 1000);
 }
