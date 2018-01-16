@@ -52,8 +52,6 @@ callForNote('javascript', function(note) {
 	});
 	console.log('take bath');
 	console.log('eat food');
-
-
 });
 console.log('this is below call for note');
 
