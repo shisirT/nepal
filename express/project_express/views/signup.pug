@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title javascript
+	body
+		p please register to proceed
+		form(id="form",method="post",name="form")
+			table
+				tr
+					td name
+					td
+						input(type="text",placeholder="enter your name",name="name",id="name")
+				tr
+					td address
+					td
+						input(type="text",placeholder="enter your address",name="address",id="address")
+				tr
+					td phone number
+					td
+						input(type="text",placeholder="enter your phoneNumber",name="phoneNumber",id="phoneNumber")
+				tr
+					td email
+					td
+						input(type="text",placeholder="enter your email",name="email",id="email")
+				tr
+					td username
+					td
+						input(type="text",placeholder="enter your username",name="username",id="username")
+				tr
+					td password
+					td
+						input(type="password",placeholder="enter your password",name="password",id="password")
+				tr
+					td
+						input(type="submit",value="register")
+
+		span
+			p dont have an account register below
+
+			p 
+				a(href="/signup") Sign Up

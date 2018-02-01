@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title javascript
+	body
+		p please login to proceed
+		form(id="form",method="post",name="form")
+			table
+				tr
+					input(type="text",placeholder="enter your username",name="username",id="username")
+					input(type="password",placeholder="enter your password",name="password",id="password")
+					input(type="submit",value="login")
+
+		span
+			p dont have an account register below
+
+			p 
+				a(href="/auth/signup") Sign Up
