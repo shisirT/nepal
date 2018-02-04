@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+var expressValidator = require('express-validator');
 var path = require('path');
 
 var app = express();
@@ -20,6 +21,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 app.use(morgan('dev'));
+app.use(expressValidator());
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/auth', authRoute);
